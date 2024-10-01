@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+}
+
+/* Header */
+.custom-header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.round-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #4CAF50;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Enable positioning for the hover effect */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: block; /* Make the entire area clickable */
+    padding: 10px 15px; /* Add padding for better click area */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #764ba2; /* Change text color on hover */
+}
+
+/* Movement effect */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #764ba2; /* Underline color */
+    transform: translateX(-50%) scaleX(0); /* Initial scale */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+nav ul li a:hover::after {
+    transform: translateX(-50%) scaleX(1); /* Scale to full width on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Profile Details */
+.profile-details {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto; /* Centering the profile box */
+    max-width: 600px;
+    text-align: center; /* Center the text inside */
+    border: 1px solid #e0e0e0; /* Subtle border for definition */
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column; /* Stack the image and text */
+    align-items: center; /* Center align */
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.profile-info {
+    margin-top: 20px; /* Space between profile header and info */
+}
+
+.info-row {
+    display: flex;
+    justify-content: center; /* Center align both label and data */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.info-row label {
+    font-weight: 600;
+    color: #4a4e69;
+    width: 200px; /* Fixed width for labels */
+    text-align: left; /* Align labels to the left */
+}
+
+.info-row span {
+    flex-grow: 1;
+    text-align: center; /* Center align data */
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}

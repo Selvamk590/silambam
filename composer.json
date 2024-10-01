@@ -1,0 +1,6 @@
+{
+    "require": {
+        "razorpay/razorpay": "2.*",
+        "xoxoday/razorpay": "^1.0"
+    }
+}
